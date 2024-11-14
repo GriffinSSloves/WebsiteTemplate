@@ -1,9 +1,14 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
-import { Button } from './components/ui/button'
 import './index.css'
+import { AppRouter } from './lib/router'
 
 function App() {
-    return <div></div>
+    return (
+        <div>
+            <RouterProvider router={AppRouter} future={{ v7_startTransition: true }} />
+        </div>
+    )
 }
 
 export default App
