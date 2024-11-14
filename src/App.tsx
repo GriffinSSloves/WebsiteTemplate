@@ -1,4 +1,5 @@
 import './App.css'
+import { Button } from './components/ui/button'
 import './index.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
             </header>
             <main className='max-w-4xl mx-auto'>
                 <p className='text-gray-700'>I'm a work in progress that is still not finished. Check back soon.</p>
+                <Button>Check out this sweet button though. Nice, huh?</Button>
             </main>
         </div>
     )
