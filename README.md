@@ -7,3 +7,4 @@ Features / Tech used
 * ShadCN base components
 * React Router Dom
 * Pnpm for package management
+* Prettier
