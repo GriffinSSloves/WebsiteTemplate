@@ -8,3 +8,4 @@ Features / Tech used
 * React Router Dom
 * Pnpm for package management
 * Prettier
+* EsLint
