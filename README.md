@@ -11,3 +11,10 @@ Features / Tech used
 -   Prettier
 -   EsLint
 -   Vitest for testing
+
+Instructions
+`pnpm install`
+
+`pnpm build` - You only need to do this once
+
+`pnpm dev`

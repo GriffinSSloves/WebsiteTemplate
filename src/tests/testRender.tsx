@@ -8,6 +8,7 @@ type TestRenderOptions = {
     renderOptions?: RenderOptions
 }
 
+// Wraps the UI in a test router provider and other providers
 export const testRender = (ui: ReactElement, options: TestRenderOptions = {}) => {
     const { renderOptions = {} } = options
 
@@ -19,7 +20,7 @@ export const testRender = (ui: ReactElement, options: TestRenderOptions = {}) =>
         }
     ]
 
-    return testRenderWithAppRoutes(ui, { initialRoute: '/test', routes: testRoutes, renderOptions })
+    return testRenderWithAppRoutes({ initialRoute: '/test', routes: testRoutes, renderOptions })
 }
 
 type TestRenderWithAppRoutesOptions = {
@@ -28,7 +29,8 @@ type TestRenderWithAppRoutesOptions = {
     renderOptions?: RenderOptions
 }
 
-export const testRenderWithAppRoutes = (ui: ReactElement, options: TestRenderWithAppRoutesOptions = {}) => {
+// Specifically for testing the real app routes with the router
+export const testRenderWithAppRoutes = (options: TestRenderWithAppRoutesOptions = {}) => {
     const { initialRoute = '/', routes = appRoutes, renderOptions = {} } = options
 
     const router = createMemoryRouter(routes, {
