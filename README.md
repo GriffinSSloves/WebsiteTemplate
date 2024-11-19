@@ -3,9 +3,11 @@
 This is a template for a modern website written in Typescript and React
 
 Features / Tech used
-* TailwindCSS
-* ShadCN base components
-* React Router Dom
-* Pnpm for package management
-* Prettier
-* EsLint
+
+-   TailwindCSS
+-   ShadCN base components
+-   React Router Dom
+-   Pnpm for package management
+-   Prettier
+-   EsLint
+-   Vitest for testing
